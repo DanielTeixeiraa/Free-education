@@ -15,7 +15,7 @@
 <div class="item">
   <div>Data de nascimento</div>
   <div>
-    <input type="date" value="{{teachers.birth}}" name="age">
+    <input type="date" value="{{teachers.age}}" name="age">
   </div>
 </div>
 
@@ -27,7 +27,7 @@
       type="radio"
       name="type"
       value="a distancia"
-      {% if instructor.gender == 'a distancia'%}
+      {% if teachers.type == 'a distancia'%}
       checked
       {% endif %}
       >A distancia</span>
@@ -36,7 +36,7 @@
       type="radio"
       name="type"
       value="presencial"
-      {% if instructor.gender == 'presencial'%}
+      {% if teachers.type == 'presencial'%}
       checked
       {% endif %}>Presencial</span>
   </div>

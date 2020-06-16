@@ -8,7 +8,9 @@ routes.get('/teachers', function(req,res){
   return res.render("teachers/index")
 })
 
-routes.get('/teachers/create', teachers.create)
+routes.get('/teachers/create', teachers.create);
+
+routes.post('/teachers', teachers.post)
 
 routes.get('/students', function(req,res){
   return res.send("students")
