@@ -12,6 +12,10 @@
   border: none;
 }
 
+html{
+  font-size: 62.5%;
+}
+
 body{
   background-color: var(--primary-color) ;
   font-family: 'Roboto', sans-serif;
